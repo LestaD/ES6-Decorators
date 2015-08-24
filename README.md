@@ -22,7 +22,7 @@ function Deprecated(why) {
 }
 ```
 
-You can mark your deprecated methods with `@deprecated()`. And when you call your deprecated method in console you will see the warning.
+You can mark your deprecated methods with `@Deprecated('description')`. And when you call your deprecated method in console you will see the warning.
 
 ```es6
 class APIv6 extends APIBase {
@@ -41,7 +41,7 @@ class APIv6 extends APIBase {
  DEPRECATE: Method APIv6.regexpData() is deprecated. Use filterData(String keys)
 ```
 
-For simple deprecate without description you can write this:
+For simple deprecate without description you can write:
 
 ```es6
 function deprecated(target, key, descriptor) {
