@@ -193,6 +193,8 @@ class UserPage extends Controller {
     this.render('user/home', { user: this.global.user });
   }
 }
+
+Olly.router.invoke('/user/home', {});
 ```
 
 Console:
