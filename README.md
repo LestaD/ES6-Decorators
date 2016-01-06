@@ -203,4 +203,21 @@ End UserPage.actionHome(): 3.765ms
 ```
 
 
+```js
+class Class {
+  @Timer()
+  method(arg1, arg2) {
+    return arg1 + arg2;
+  }
+}
 
+let cls = new Class();
+cls.method(5, 7);
+```
+
+Console:
+
+```
+Run Class.method(5,7)
+End Class.method(5,7): 1.312ms
+```
